@@ -1,4 +1,4 @@
-# Lab 2 Branch Prediction
+# Lab 2: Branch Prediction
 In this lab, I simulate a correlating branch predictor that makes use of 2-bit saturating counters. 
 ## Branch Predictor Architecture
 My design consists of 2m+k 2-bit saturating counters indexed using m LSBs of each branch instruction and a k bit Branch History Register (BHR) that records the outcomes of the previous k branches. Each 2-bit saturating predictor starts in the 11 (Predict Taken with High Confidence) state and is updated as per the finite state machine discussed in Lecture 12. Further, you can assume that the BHR is initialized assuming the previous k branches were Taken.  
